@@ -5,10 +5,8 @@ describe('hero tests', () => {
   it('should render the hero component', () => {
     render(<Hero />);
     const heroElement = screen.getByRole('banner', { name: 'hero' });
-    const titleElement = screen.getByText('TaskVillam');
-    const descriptionElement = screen.getByText(
-      'Check out what the world is up to.'
-    );
+    const titleElement = screen.getByText('Inviami');
+    const descriptionElement = screen.getByText(/You're invited/);
 
     expect(heroElement).toBeInTheDocument();
     expect(titleElement).toBeInTheDocument();

@@ -6,17 +6,12 @@ import publicRoutes from './routes/public.routes';
 import { Suspense } from 'react';
 import LandingPage from '@/pages/LandingPage';
 import Spinner from '@/components/Spinner';
-import LandingLayout from '@/components/Layout/LandingLayout';
 
 export const AppRoutes = () => {
   const commonRoutes = [
     {
       path: '/',
-      element: (
-        <LandingLayout>
-          <LandingPage />
-        </LandingLayout>
-      ),
+      element: <LandingPage />,
     },
   ];
 
