@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
