@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Inviami 📮
+You're invited.
+Copyright 2024.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+Create digital invites with live RSVP. Inviami aims to create digital experiences and connects people over the internet.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Disclaimer:
 
-## Expanding the ESLint configuration
+I'm sharing this code with hiring managers or potential employers. Please review the license for this code before cloning or forking the project. [janoskocs.com](https://janoskocs.com)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[![LICENCE](https://img.shields.io/github/license/janoskocs/inviami-front-end)](https://github.com/janoskocs/inviami-front-end)
 
-- Configure the top-level `parserOptions` property like this:
+## Table of Contents:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- [💻 Application Overview](docs/application-overview.md)
+- [⚙️ Project Configuration](docs/project-configuration.md)
+- [👁️ Style Guide](docs/style-guide.md)
+- [🗄️ Project Structure](docs/project-structure.md)
+- [🧱 Components And Styling](docs/components-and-styling.md)
+- [🗃️ State Management](docs/state-management.md)
+- [🧪 Testing](docs/testing.md)
+- [⚠️ Error Handling](docs/error-handling.md)
+- [🔐 Security](docs/security.md)
+- [🚄 Performance](docs/performance.md)
+- [🌐 Deployment](docs/deployment.md)
+- [📚 Additional Resources](docs/additional-resources.md)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Thank you!
+
+Thanks for stopping by and checking out my work! Visit my [portfolio](https://janoskocs.com) to learn more.
+You can find me blogging on [dev.to](https://dev.to/janoskocs).
