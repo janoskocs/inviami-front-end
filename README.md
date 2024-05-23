@@ -10,7 +10,7 @@ Create digital invites with live RSVP. Inviami aims to create digital experience
 
 I'm sharing this code with hiring managers or potential employers. Please review the license for this code before cloning or forking the project. [janoskocs.com](https://janoskocs.com)
 
-[![LICENCE](https://img.shields.io/badge/All%20Rights%20Reserved)](https://github.com/janoskocs/inviami-front-end?tab=License-1-ov-file)
+[![LICENCE](https://img.shields.io/badge/Licence-All_rights_reserved.-blue)](https://github.com/janoskocs/inviami-front-end?tab=License-1-ov-file)
 
 ## Table of Contents:
 
