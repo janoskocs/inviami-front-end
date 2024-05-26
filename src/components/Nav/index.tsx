@@ -2,15 +2,15 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <nav aria-label="main navigation" className="border-gray-200">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav aria-label="main navigation" className="border-b-2 border-grey">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-around md:justify-between mx-auto p-4">
         <Link
           to="https://inviami.com/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
             src="/inviami_logo_wide.png"
-            className="h-20"
+            className="h-16"
             alt="Inviami Logo"
           />
           {/* <span className="self-center text-2xl font-light whitespace-nowrap dark:text-white">
@@ -20,7 +20,7 @@ const Nav = () => {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:bg-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            className="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:bg-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
           >
             Get started
           </button>
@@ -40,7 +40,7 @@ const Nav = () => {
               viewBox="0 0 17 14"
             >
               <path
-                stroke="currentColor"
+                stroke="#DC5463"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
@@ -57,7 +57,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/"
-                className="block py-2 px-3 md:p-0 text-secondary bg-rose-700 rounded md:bg-transparent md:text-secondary md:dark:text-secondary hover:text-prmary"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
                 aria-current="page"
               >
                 Home
@@ -66,7 +66,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/shop"
-                className="block py-2 px-3 md:p-0 text-secondary bg-rose-700 rounded md:bg-transparent md:text-secondary md:dark:text-secondary"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
               >
                 Shop
               </NavLink>
@@ -74,7 +74,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/templates"
-                className="block py-2 px-3 md:p-0 text-secondary bg-rose-700 rounded md:bg-transparent md:text-secondary md:dark:text-secondary"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
               >
                 Templates
               </NavLink>
@@ -82,7 +82,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/privacy"
-                className="block py-2 px-3 md:p-0 text-secondary bg-rose-700 rounded md:bg-transparent md:text-secondary md:dark:text-secondary"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
               >
                 Privacy
               </NavLink>
@@ -90,7 +90,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/event-admin"
-                className="block py-2 px-3 md:p-0 text-secondary bg-rose-700 rounded md:bg-transparent md:text-secondary md:dark:text-secondary"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
               >
                 Event Admin
               </NavLink>
@@ -99,32 +99,6 @@ const Nav = () => {
         </div>
       </div>
     </nav>
-
-    // <div data-testid="nav">
-    //   <section>
-    //     <div>
-    //       <Link to="/">
-    //         <h2 classNameName="text-3xl font-bold">Inviami</h2>
-    //       </Link>
-    //     </div>
-    //     <nav>
-    //       <ul>
-    //         <li>
-    //           <NavLink to="/shop">Shop</NavLink>
-    //         </li>
-    //         <li>
-    //           <NavLink to="/templates">Templates</NavLink>
-    //         </li>
-    //         <li>
-    //           <NavLink to="/privacy">Privacy</NavLink>
-    //         </li>
-    //         <li>
-    //           <NavLink to="/admin">Event Admin</NavLink>
-    //         </li>
-    //       </ul>
-    //     </nav>
-    //   </section>
-    // </div>
   );
 };
 
