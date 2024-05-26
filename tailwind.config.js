@@ -3,6 +3,13 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
+    colors: {
+      primary: '#DC5463',
+      secondary: '#E8DED4',
+      white: '#FFFFFF',
+      black: '#000000',
+      grey: '#F5F5F5',
+    },
   },
   plugins: [],
 };

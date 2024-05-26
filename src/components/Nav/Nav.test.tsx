@@ -10,7 +10,9 @@ describe('nav tests', () => {
         <Nav />
       </MemoryRouter>
     );
-    const navElement = screen.getByTestId('nav');
+    const navElement = screen.getByRole('navigation', {
+      name: 'main navigation',
+    });
 
     expect(navElement).toBeInTheDocument();
   });
