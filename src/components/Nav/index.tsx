@@ -6,7 +6,7 @@ const Nav = () => {
       <section>
         <div>
           <Link to="/">
-            <h2>Inviami</h2>
+            <h2 className="text-3xl font-bold">Inviami</h2>
           </Link>
         </div>
         <nav>
