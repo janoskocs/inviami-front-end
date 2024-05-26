@@ -1,6 +1,5 @@
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import Nav from '@/components/Nav';
-import { screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
 describe('nav tests', () => {
@@ -32,5 +31,28 @@ describe('nav tests', () => {
     expect(templatesLink).toBeInTheDocument();
     expect(privacyLink).toBeInTheDocument();
     expect(adminLink).toBeInTheDocument();
+  });
+
+  it('should reveal the nav links when the menu button is clicked in mobile', () => {
+    render(
+      <MemoryRouter>
+        <Nav />
+      </MemoryRouter>
+    );
+
+    const menuButton = screen.getByRole('button', { name: /open main menu/i });
+    const mobileMenu = screen.getByTestId('mobile-menu');
+
+    expect(menuButton).toBeInTheDocument();
+
+    expect(mobileMenu).toHaveClass('hidden');
+
+    fireEvent.click(menuButton);
+
+    expect(mobileMenu).not.toHaveClass('hidden');
+
+    fireEvent.click(menuButton);
+
+    expect(mobileMenu).toHaveClass('hidden');
   });
 });
