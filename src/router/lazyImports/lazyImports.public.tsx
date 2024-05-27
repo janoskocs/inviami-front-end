@@ -3,5 +3,6 @@
 import { lazyImport } from '@/utils/lazyImport';
 
 const About = lazyImport('../pages/About');
+const Privacy = lazyImport('../pages/Privacy');
 
-export { About };
+export { About, Privacy };
