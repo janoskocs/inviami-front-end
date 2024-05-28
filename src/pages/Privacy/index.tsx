@@ -4,9 +4,9 @@ const Privacy = () => {
     <>
       <Nav />
       <section className="p-4 md:max-w-md mx-auto">
-        <h2 className="font-bold text-xl text-center mb-2 text-primary">
-          Privacy Policy
-        </h2>
+        <h1 className="font-bold text-xl text-center mb-2 text-primary">
+          Privacy Policy Page
+        </h1>
         <p className="font-bold mb-2">Last updated: April 05, 2024</p>
         <p className="mb-2">
           This Privacy Policy describes Our policies and procedures on the
