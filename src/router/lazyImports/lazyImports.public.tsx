@@ -4,5 +4,6 @@ import { lazyImport } from '@/utils/lazyImport';
 
 const About = lazyImport('../pages/About');
 const Privacy = lazyImport('../pages/Privacy');
+const Templates = lazyImport('../pages/Templates');
 
-export { About, Privacy };
+export { About, Privacy, Templates };
