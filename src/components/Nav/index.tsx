@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+import './Nav.css';
+
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -15,14 +17,17 @@ const Nav = () => {
   };
 
   return (
-    <nav aria-label="main navigation" className="border-b-2 border-grey">
+    <nav
+      aria-label="main navigation"
+      className="border-b-2 border-grey glass-background glass-shadow glass-backdrop-filter sticky top-0"
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-around md:justify-between mx-auto p-4">
         <Link
           to="https://inviami.com/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            src="/inviami_logo_wide.png"
+            src="/inviami_logo_wide_transparent.png"
             className="h-16"
             alt="Inviami Logo"
           />
@@ -30,7 +35,7 @@ const Nav = () => {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-white bg-primary hover:bg-grey hover:text-primary focus:ring-4 focus:outline-none focus:bg-primary font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
+            className="text-white bg-primary hover:bg-grey hover:text-primary focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
           >
             Get started
           </button>
@@ -69,11 +74,11 @@ const Nav = () => {
           id="navbar-cta"
           data-testid="mobile-menu"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
             <li>
               <NavLink
                 to="/"
-                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-black transition-colors duration-400 ease-in-out"
                 aria-current="page"
               >
                 Home
@@ -82,7 +87,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/shop"
-                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
               >
                 Shop
               </NavLink>
@@ -90,7 +95,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/templates"
-                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
               >
                 Templates
               </NavLink>
@@ -98,7 +103,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/privacy"
-                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
               >
                 Privacy
               </NavLink>
@@ -106,7 +111,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/event-admin"
-                className="block py-2 px-3 md:p-0 text-primary hover:text-secondary transition-colors duration-400 ease-in-out"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
               >
                 Event Admin
               </NavLink>
