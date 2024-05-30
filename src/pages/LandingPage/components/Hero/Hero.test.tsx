@@ -1,22 +1,79 @@
 import { screen, render } from '@testing-library/react';
 import Hero from '.';
+import { MemoryRouter } from 'react-router-dom';
 
 describe('hero tests', () => {
   it('should render the hero component', () => {
-    render(<Hero />);
-    const heroElement = screen.getByRole('banner', { name: 'hero' });
-    const titleElement = screen.getByText('Inviami');
-    const descriptionElement = screen.getByText(/You're invited/);
+    render(
+      <MemoryRouter>
+        <Hero />
+      </MemoryRouter>
+    );
+    const hero = screen.getByRole('heading', {
+      name: 'Digital invitations with live RSVP',
+    });
 
-    expect(heroElement).toBeInTheDocument();
-    expect(titleElement).toBeInTheDocument();
-    expect(descriptionElement).toBeInTheDocument();
+    expect(hero).toBeInTheDocument();
+
+    expect(hero).toHaveTextContent('Digital invitations with live RSVP');
   });
 
-  it('should render a get started button with type button', () => {
-    render(<Hero />);
-    const buttonElement = screen.getByRole('button', { name: 'Get Started' });
-    expect(buttonElement).toHaveAttribute('type', 'button');
-    expect(buttonElement).toBeInTheDocument();
+  it('should render a get started link', () => {
+    render(
+      <MemoryRouter>
+        <Hero />
+      </MemoryRouter>
+    );
+    const getStartedLink = screen.getByRole('link', { name: /get started/i });
+
+    expect(getStartedLink).toBeInTheDocument();
+
+    expect(getStartedLink).toHaveAttribute('href', 'https://inviami.etsy.com');
+  });
+
+  it('should render a mockup image', () => {
+    render(
+      <MemoryRouter>
+        <Hero />
+      </MemoryRouter>
+    );
+    const mockupImage = screen.getByRole('img', { name: /mockup/i });
+
+    expect(mockupImage).toBeInTheDocument();
+
+    expect(mockupImage).toHaveAttribute(
+      'src',
+      'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png'
+    );
+  });
+
+  it('should render a description', () => {
+    render(
+      <MemoryRouter>
+        <Hero />
+      </MemoryRouter>
+    );
+    const description = screen.getByText(
+      'Create beautiful digital invitations and track RSVPs in real-time. Share your event with friends and family.'
+    );
+
+    expect(description).toBeInTheDocument();
+
+    expect(description).toHaveTextContent(
+      'Create beautiful digital invitations and track RSVPs in real-time. Share your event with friends and family.'
+    );
+  });
+
+  it('should render a check it out on etsy text', () => {
+    render(
+      <MemoryRouter>
+        <Hero />
+      </MemoryRouter>
+    );
+    const checkItOut = screen.getByText(/check it out on etsy/i);
+
+    expect(checkItOut).toBeInTheDocument();
+
+    expect(checkItOut).toHaveTextContent('Check it out on Etsy');
   });
 });
