@@ -30,7 +30,7 @@ const Nav = () => {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:bg-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
+            className="text-white bg-primary hover:bg-grey hover:text-primary focus:ring-4 focus:outline-none focus:bg-primary font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
           >
             Get started
           </button>

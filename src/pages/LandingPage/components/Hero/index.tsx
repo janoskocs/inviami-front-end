@@ -22,7 +22,7 @@ const Hero = () => {
           <Link
             target="_blank"
             to="https://inviami.etsy.com"
-            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-secondary focus:ring-4 focus:primary"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-grey hover:text-primary focus:ring-4 focus:primary transition-colors duration-400 ease-in-out"
           >
             Get started
             <svg
