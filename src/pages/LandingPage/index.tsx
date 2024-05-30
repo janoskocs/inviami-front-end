@@ -2,6 +2,7 @@ import Hero from './components/Hero';
 import Nav from '@/components/Nav';
 import PurchaseSteps from './components/PurchaseSteps';
 import HeroCTA from './components/HeroCTA';
+import Footer from '@/components/Footer';
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Hero />
       <PurchaseSteps />
       <HeroCTA />
+      <Footer />
     </>
   );
 };
