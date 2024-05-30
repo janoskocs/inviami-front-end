@@ -2,6 +2,7 @@ import Nav from '@/components/Nav';
 import { templates } from '@/data/templates';
 import NoTemplates from './components/NoTemplates';
 import TemplatesList from './components/TemplatesList';
+import Footer from '@/components/Footer';
 
 const Templates = () => {
   return (
@@ -15,6 +16,7 @@ const Templates = () => {
         {templates.length === 0 && <NoTemplates />}
         {templates.length > 0 && <TemplatesList />}
       </section>
+      <Footer />
     </>
   );
 };

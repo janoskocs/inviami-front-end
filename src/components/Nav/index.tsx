@@ -78,7 +78,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/"
-                className="block py-2 px-3 md:p-0 text-primary hover:text-black transition-colors duration-400 ease-in-out"
+                className="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
                 aria-current="page"
               >
                 Home

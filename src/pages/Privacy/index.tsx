@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
 const Privacy = () => {
   return (
@@ -417,6 +418,7 @@ const Privacy = () => {
           </li>
         </ul>
       </section>
+      <Footer />
     </>
   );
 };
