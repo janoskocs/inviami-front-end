@@ -10,6 +10,7 @@ export default {
       black: '#000000',
       grey: '#F5F5F5',
       darkGrey: '#E5E5E5',
+      lightgold: '#FAF3DD',
     },
   },
   plugins: [],

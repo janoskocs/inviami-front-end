@@ -1,0 +1,336 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EventAdmin page tests > should render EventAdmin page and match snapshot 1`] = `
+<div>
+  <nav
+    aria-label="main navigation"
+    class="border-b-2 border-grey glass-background glass-shadow glass-backdrop-filter sticky top-0"
+  >
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-around md:justify-between mx-auto p-4"
+    >
+      <a
+        class="flex items-center space-x-3 rtl:space-x-reverse"
+        href="https://inviami.com/"
+      >
+        <img
+          alt="Inviami Logo"
+          class="h-16"
+          src="/inviami_logo_wide_transparent.png"
+        />
+      </a>
+      <div
+        class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+      >
+        <button
+          class="text-white bg-primary hover:bg-grey hover:text-primary focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
+          type="button"
+        >
+          Get started
+        </button>
+        <button
+          aria-controls="navbar-cta"
+          aria-expanded="false"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-grey rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          data-collapse-toggle="navbar-cta"
+          type="button"
+        >
+          <span
+            class="sr-only"
+          >
+            Open main menu
+          </span>
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5"
+            fill="none"
+            viewBox="0 0 17 14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1h15M1 7h15M1 13h15"
+              stroke="#DC5463"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+        data-testid="mobile-menu"
+        id="navbar-cta"
+      >
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 "
+        >
+          <li>
+            <a
+              aria-current="page"
+              class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out active"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
+              href="/shop"
+            >
+              Shop
+            </a>
+          </li>
+          <li>
+            <a
+              class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
+              href="/templates"
+            >
+              Templates
+            </a>
+          </li>
+          <li>
+            <a
+              class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
+              href="/privacy"
+            >
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a
+              class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
+              href="/event-admin"
+            >
+              Event Admin
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section
+    class="bg-secondary"
+  >
+    <div
+      class="flex flex-col items-center justify-center px-6 py-8 mx-auto"
+    >
+      <div
+        class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 dark:bg-white"
+      >
+        <svg
+          class="fill-primary w-20 h-20 mx-auto mt-4 sm:w-24 sm:h-24"
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          image-rendering="optimizeQuality"
+          shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision"
+          viewBox="0 0 467 511.99"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M32.04 203.45H467v271.36c0 20.42-16.77 37.18-37.18 37.18H66.19c-20.41 0-37.17-16.72-37.17-37.18V204.32L0 115.66l63.2-17.94 32.51 87.51-63.67 18.22zm102.04-29.2 75.98-21.73-32.43-87.3-73.07 20.75 29.52 88.28zm114.44-32.74 85.79-24.53-32.37-87.07-82.85 23.55 29.43 88.05zm124.16-35.52 63.63-18.2L407.3 0l-63.97 18.16 29.35 87.83zM92.4 253.72h311.23c1.69 0 3.06 1.42 3.06 3.04v10.36c0 1.64-1.45 3.07-3.06 3.07H92.4c-1.61 0-3.06-1.37-3.06-3.07v-10.36c0-1.69 1.39-3.04 3.06-3.04zm34.09 70.49v-10.55c0-1.49-.85-2.23-2.54-2.23h-7.31v15.02h7.31c1.69 0 2.54-.75 2.54-2.24zm0 26.82v-10.68c0-1.48-.85-2.23-2.54-2.23h-7.31v15.14h7.31c1.69 0 2.54-.74 2.54-2.23zm-27.31-51.29h29.85c9.96 0 14.93 4.21 14.93 12.6v8.33c0 5.88-1.63 9.71-4.88 11.46 1.9.82 3.19 2.05 3.86 3.71.68 1.66 1.02 3.91 1.02 6.75v9.76c0 8.39-4.97 12.58-14.93 12.58H99.18v-65.19zm73.2 52.5h22.24v12.69h-40.01v-65.19h39.1v12.69h-21.33v13.32h18.38v12.69h-18.38v13.8zm61.12-52.5h17.46v65.19H233.5v-25.79h-12.8v25.79h-17.46v-65.19h17.46v26.71h12.8v-26.71zm28.62 0h17.77v65.19h-17.77v-65.19zm58.67 0h16.25v65.19h-15.23l-14.51-34.21v34.21h-16.25v-65.19h15.23l14.51 34.84v-34.84zm28.43 0h29.96c9.94 0 14.92 4.21 14.92 12.6v40.01c0 8.39-4.98 12.58-14.92 12.58h-29.96v-65.19zm27.11 51.29v-37.37c0-1.49-.85-2.23-2.54-2.23h-6.81v41.83h6.81c1.69 0 2.54-.74 2.54-2.23zm-254.52 93.34v-9.24c0-1.49-.83-2.24-2.54-2.24h-9.74c-5 0-8.54-1.09-10.61-3.3-2.07-2.2-3.1-5.36-3.1-9.48V406.7c0-8.39 4.94-12.6 14.83-12.6h13.91c9.88 0 14.82 4.21 14.82 12.6v7.82h-17.77v-5.49c0-1.49-.85-2.24-2.53-2.24h-2.95c-1.69 0-2.54.75-2.54 2.24v9.65c0 1.49.85 2.23 2.54 2.23h9.54c5.02 0 8.59 1.05 10.72 3.15 2.13 2.1 3.19 5.18 3.19 9.24v13.41c0 8.39-4.94 12.58-14.82 12.58h-13.8c-9.96 0-14.93-4.19-14.93-12.58v-7.83h17.77v5.49c0 1.49.84 2.23 2.54 2.23h2.93c1.71 0 2.54-.74 2.54-2.23zm71.59-25.89h-17.77v-10.45c0-1.49-.85-2.24-2.53-2.24h-3.56c-1.7 0-2.54.75-2.54 2.24v37.36c0 1.49.84 2.23 2.54 2.23h3.56c1.68 0 2.53-.74 2.53-2.23v-10.05h17.77v11.37c0 8.39-4.98 12.58-14.92 12.58h-14.32c-9.96 0-14.93-4.19-14.93-12.58V406.7c0-8.39 4.97-12.6 14.93-12.6h14.32c9.94 0 14.92 4.21 14.92 12.6v11.78zm27.41 28.12h22.24v12.69h-40.01V394.1h39.09v12.69h-21.32v13.32h18.37v12.69h-18.37v13.8zm60.6-52.5h16.25v65.19h-15.23l-14.52-34.21v34.21h-16.25V394.1h15.23l14.52 34.84V394.1zm45.17 52.5h22.24v12.69h-40V394.1h39.09v12.69h-21.33v13.32h18.38v12.69h-18.38v13.8zm55.83-2.23v-9.24c0-1.49-.83-2.24-2.54-2.24h-9.74c-5 0-8.54-1.09-10.61-3.3-2.07-2.2-3.1-5.36-3.1-9.48V406.7c0-8.39 4.94-12.6 14.84-12.6h13.9c9.88 0 14.82 4.21 14.82 12.6v7.82h-17.77v-5.49c0-1.49-.85-2.24-2.53-2.24h-2.95c-1.69 0-2.54.75-2.54 2.24v9.65c0 1.49.85 2.23 2.54 2.23h9.54c5.02 0 8.59 1.05 10.72 3.15 2.13 2.1 3.19 5.18 3.19 9.24v13.41c0 8.39-4.94 12.58-14.82 12.58h-13.8c-9.96 0-14.93-4.19-14.93-12.58v-7.83h17.77v5.49c0 1.49.84 2.23 2.54 2.23h2.93c1.71 0 2.54-.74 2.54-2.23z"
+          />
+        </svg>
+        <div
+          class="p-6 space-y-4 md:space-y-6 sm:p-8"
+        >
+          <h2
+            class="text-xl font-bold leading-tight tracking-tight text-primary md:text-2xl"
+          >
+            Sign in to your event admin account
+          </h2>
+          <form
+            class="space-y-4 md:space-y-4"
+          >
+            <div>
+              <label
+                class="block mb-2 text-sm font-medium text-primary"
+                for="event-link"
+              >
+                Event link
+              </label>
+              <input
+                class="bg-grey border border-secondary text-primary sm:text-sm rounded-lg block w-full p-2.5 focus:outline-primary"
+                id="event-link"
+                name="event-link"
+                placeholder="katys-30th-birthday"
+                required=""
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                class="block mb-2 text-sm font-medium text-primary "
+                for="password"
+              >
+                Pin
+              </label>
+              <input
+                class="bg-grey border border-secondary text-primary sm:text-sm rounded-lg block w-full p-2.5"
+                id="password"
+                maxlength="4"
+                name="password"
+                placeholder="••••"
+                required=""
+                type="password"
+              />
+            </div>
+            <div
+              class="flex items-center justify-between"
+            >
+              <a
+                class="text-sm font-medium text-primary hover:underline"
+                href="https://inviami.etsy.com"
+              >
+                Forgot your PIN? Get in touch with us on Etsy.
+              </a>
+            </div>
+            <button
+              class="w-full text-white bg-primary hover:bg-secondary hover:text-primary focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              type="submit"
+            >
+              Sign in
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="bg-grey"
+    role="contentinfo"
+  >
+    <div
+      class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8"
+    >
+      <div
+        class="md:flex md:justify-between"
+      >
+        <div
+          class="mb-6 md:mb-0"
+        >
+          <a
+            class="flex items-center"
+            href="https://inviami.com/"
+          >
+            <img
+              alt="Inviami Logo"
+              class="h-8 me-3"
+              src="/inviami_logo_wide_transparent.png"
+            />
+          </a>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3"
+        >
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-primary uppercase"
+            >
+              Follow us
+            </h2>
+            <ul
+              class="text-black font-medium"
+            >
+              <li
+                class="mb-4"
+              >
+                <a
+                  class="hover:underline"
+                  href="https://instagram.com/inviami.invites"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hover:underline"
+                  href="https://www.youtube.com/channel/UCycUWAt8rJjnTQ_xssS8Ogw"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-primary uppercase"
+            >
+              Legal
+            </h2>
+            <ul
+              class="text-black font-medium"
+            >
+              <li
+                class="mb-4"
+              >
+                <a
+                  class="hover:underline"
+                  href="/privacy"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-primary uppercase"
+            >
+              Contact us
+            </h2>
+            <ul
+              class="text-black font-medium"
+            >
+              <li
+                class="mb-4"
+              >
+                <a
+                  class="hover:underline"
+                  href="mailto:inviami.invites@gmail.com"
+                >
+                  inviami.invites@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="my-6 border-primary sm:mx-auto lg:my-8"
+      />
+      <div
+        class="sm:flex sm:items-center sm:justify-between"
+      >
+        <span
+          class="text-sm text-primary sm:text-center"
+        >
+          © 2023
+           
+          <a
+            class="hover:underline"
+            href="https://inviami.com"
+          >
+            Inviami
+          </a>
+          . Built by
+           
+          <a
+            class="hover:underline"
+            href="https://janoskocs.com"
+          >
+            János Kócs
+          </a>
+          . All Rights Reserved.
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
