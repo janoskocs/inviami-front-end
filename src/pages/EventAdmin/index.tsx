@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
@@ -14,11 +14,68 @@ const EventAdmin = () => {
     password: '',
   });
 
+  const [noTokenAllowed, setNoTokenAllowed] = useState<boolean>(false);
+  const [user, setUser] = useState<string | null>(null);
+
+  const handleToken = () => {
+    try {
+      setNoTokenAllowed(false);
+      const token = sessionStorage.getItem('token');
+      if (!token) {
+        setUser(null);
+        return;
+      }
+      setUser(token);
+    } catch (error) {
+      setNoTokenAllowed(true);
+    }
+  };
+
+  useEffect(() => {
+    handleToken();
+  }, []);
+
   return (
     <>
       <Nav />
-      <section className="bg-secondary">
-        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto">
+      <section className="bg-secondary pt-6">
+        {noTokenAllowed && !user && (
+          <p className="mx-auto p-6 mb-6 w-full bg-white rounded-lg shadow sm:max-w-md  dark:bg-white">
+            Cookies are disabled in this browser. This is not a problem, it just
+            means that you will have to log in again in case you refresh your
+            browser.{' '}
+          </p>
+        )}
+
+        {!noTokenAllowed && !user && (
+          <section className="mx-auto p-6 mb-6 w-full bg-white rounded-lg shadow sm:max-w-md">
+            <h2 className="text-primary font-bold mb-4">Cookies Notice</h2>
+            <p className="">
+              This website utilises cookies to maintain your logged-in status on
+              the Admin page. These cookies are automatically deleted when you
+              close this browser tab. By continuing to use this service, you
+              agree to the use of these cookies, or you may click here to
+              decline them. To learn more, please read our{' '}
+              <a
+                href="https://inviami.com/privacy-policy"
+                target="_blank"
+                className="text-primary hover:underline"
+              >
+                privacy policy
+              </a>
+            </p>
+            <button
+              className="text-white bg-primary hover:bg-grey hover:text-primary mt-4 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
+              onClick={() => {
+                setNoTokenAllowed(true);
+              }}
+            >
+              Decline
+            </button>{' '}
+          </section>
+        )}
+
+        <div className="flex flex-col items-center justify-center px-6 pb-8 mx-auto">
           <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 dark:bg-white">
             <svg
               className="fill-primary w-20 h-20 mx-auto mt-4 sm:w-24 sm:h-24"
