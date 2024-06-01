@@ -25,6 +25,11 @@ const publicRoutes: routerType[] = [
     element: <EventAdmin />,
     title: 'event admin',
   },
+  {
+    path: 'event-admin/:eventLink',
+    element: <EventAdmin />,
+    title: 'event admin',
+  },
 ];
 
 export default publicRoutes;
