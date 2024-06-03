@@ -193,7 +193,7 @@ exports[`EventAdmin page tests > should render EventAdmin page and match snapsho
                 class="block mb-2 text-sm font-medium text-primary "
                 for="password"
               >
-                Pin
+                PIN
               </label>
               <input
                 class="bg-grey border border-secondary text-primary sm:text-sm rounded-lg block w-full p-2.5 focus:outline-primary"

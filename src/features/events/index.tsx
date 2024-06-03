@@ -1,18 +1,46 @@
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { lazyImport } from '@/utils/lazyImport';
+import axios from 'axios';
 import Spinner from '@/components/Spinner';
 import NotFound from './pages/NotFound';
+import { GET_EVENT_URL } from '@/api';
 
-const componentMap = {
-  template1: lazyImport('./components/Template1'),
-  template2: lazyImport('./components/Template2'),
-  // Add other templates here
-};
+//Add new event component to the componentMap object
+import { componentMap } from './data/eventComponentList';
 
 const EventTemplateLoader = () => {
-  const { templateId } = useParams();
-  const TemplateComponent = componentMap[templateId];
+  const { eventLink } = useParams();
+  const [templateId, setTemplateId] = useState<string | null>(null);
+  const [eventDetails, setEventDetails] = useState<string>('test');
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  const getEventDetails = async () => {
+    setIsLoading(true);
+    try {
+      const { data } = await axios.get(
+        `${GET_EVENT_URL}/${eventLink ? eventLink : 'default'}`
+      );
+      setEventDetails(data);
+      setTemplateId(data.invitationTemplate);
+      setIsLoading(false);
+    } catch (error) {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    getEventDetails();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [eventLink]);
+
+  if (isLoading) {
+    return <Spinner />;
+  }
+
+  console.log(eventDetails);
+  const TemplateComponent =
+    templateId !== null ? componentMap[templateId] : null;
 
   if (!TemplateComponent) {
     return <NotFound />;

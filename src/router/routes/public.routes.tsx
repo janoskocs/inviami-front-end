@@ -3,7 +3,7 @@ import { routerType } from '@/router/types/router.types';
 import { About, EventAdmin } from '@/router/lazyImports/lazyImports.public';
 import { Privacy } from '@/router/lazyImports/lazyImports.public';
 import { Templates } from '@/router/lazyImports/lazyImports.public';
-import EventTemplateLoader from '@/features/events';
+import EventTemplateLoader from '@/features/events/';
 
 const publicRoutes: routerType[] = [
   {
