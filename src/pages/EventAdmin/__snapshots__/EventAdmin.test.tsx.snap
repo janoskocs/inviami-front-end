@@ -184,7 +184,6 @@ exports[`EventAdmin page tests > should render EventAdmin page and match snapsho
                 id="event-link"
                 name="event-link"
                 placeholder="katys-30th-birthday"
-                required=""
                 type="text"
                 value=""
               />
@@ -202,7 +201,6 @@ exports[`EventAdmin page tests > should render EventAdmin page and match snapsho
                 maxlength="4"
                 name="password"
                 placeholder="••••"
-                required=""
                 type="password"
                 value=""
               />

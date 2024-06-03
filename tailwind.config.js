@@ -11,6 +11,8 @@ export default {
       grey: '#F5F5F5',
       darkGrey: '#E5E5E5',
       lightgold: '#FAF3DD',
+      orange: '#FFA500',
+      lightorange: '#FFD700',
     },
   },
   plugins: [],

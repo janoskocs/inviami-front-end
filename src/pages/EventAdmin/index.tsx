@@ -14,6 +14,14 @@ const EventAdmin = () => {
     password: '',
   });
 
+  const [formErrors, setFormErrors] = useState<{
+    eventLink: string;
+    password: string;
+  }>({
+    eventLink: '',
+    password: '',
+  });
+
   const [noTokenAllowed, setNoTokenAllowed] = useState<boolean>(false);
   const [user, setUser] = useState<string | null>(null);
 
@@ -35,6 +43,30 @@ const EventAdmin = () => {
     handleToken();
   }, []);
 
+  const validateForm = () => {
+    setFormErrors({ eventLink: '', password: '' });
+    const errors = { eventLink: '', password: '' };
+
+    if (!formInput.eventLink) {
+      errors.eventLink = 'Please enter the event link.';
+    }
+    if (!formInput.password) {
+      errors.password = 'Please enter your event PIN.';
+    }
+
+    if (errors.eventLink || errors.password) {
+      setFormErrors(errors);
+      return false;
+    }
+    return true;
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (validateForm()) {
+      console.log('Form submitted');
+    }
+  };
   return (
     <>
       <Nav />
@@ -93,7 +125,7 @@ const EventAdmin = () => {
               <h2 className="text-xl font-bold leading-tight tracking-tight text-primary md:text-2xl">
                 Sign in to your event admin account
               </h2>
-              <form className="space-y-4 md:space-y-4">
+              <form className="space-y-4 md:space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label
                     htmlFor="event-link"
@@ -107,12 +139,17 @@ const EventAdmin = () => {
                     id="event-link"
                     className="bg-grey border border-secondary text-primary sm:text-sm rounded-lg block w-full p-2.5 focus:outline-primary"
                     placeholder="katys-30th-birthday"
-                    required={true}
+                    // required={true}
                     value={formInput.eventLink}
                     onChange={(e) =>
                       setFormInput({ ...formInput, eventLink: e.target.value })
                     }
                   />
+                  {formErrors.eventLink && (
+                    <span className="text-primary text-sm">
+                      {formErrors.eventLink}
+                    </span>
+                  )}
                 </div>
                 <div>
                   <label
@@ -127,13 +164,18 @@ const EventAdmin = () => {
                     id="password"
                     placeholder="••••"
                     className="bg-grey border border-secondary text-primary sm:text-sm rounded-lg block w-full p-2.5 focus:outline-primary"
-                    required={true}
+                    // required={true}
                     maxLength={4}
                     value={formInput.password}
                     onChange={(e) =>
                       setFormInput({ ...formInput, password: e.target.value })
                     }
                   />
+                  {formErrors.password && (
+                    <span className="text-primary text-sm">
+                      {formErrors.password}
+                    </span>
+                  )}
                 </div>
                 <div className="flex items-center justify-between">
                   <Link
