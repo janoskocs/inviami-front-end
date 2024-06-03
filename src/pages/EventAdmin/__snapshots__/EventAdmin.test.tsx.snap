@@ -111,10 +111,38 @@ exports[`EventAdmin page tests > should render EventAdmin page and match snapsho
     </div>
   </nav>
   <section
-    class="bg-secondary"
+    class="bg-secondary pt-6"
   >
+    <section
+      class="mx-auto p-6 mb-6 w-full bg-white rounded-lg shadow sm:max-w-md"
+    >
+      <h2
+        class="text-primary font-bold mb-4"
+      >
+        Cookies Notice
+      </h2>
+      <p
+        class=""
+      >
+        This website utilises cookies to maintain your logged-in status on the Admin page. These cookies are automatically deleted when you close this browser tab. By continuing to use this service, you agree to the use of these cookies, or you may click here to decline them. To learn more, please read our
+         
+        <a
+          class="text-primary hover:underline"
+          href="https://inviami.com/privacy-policy"
+          target="_blank"
+        >
+          privacy policy
+        </a>
+      </p>
+      <button
+        class="text-white bg-primary hover:bg-grey hover:text-primary mt-4 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
+      >
+        Decline
+      </button>
+       
+    </section>
     <div
-      class="flex flex-col items-center justify-center px-6 py-8 mx-auto"
+      class="flex flex-col items-center justify-center px-6 pb-8 mx-auto"
     >
       <div
         class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 dark:bg-white"
@@ -158,6 +186,7 @@ exports[`EventAdmin page tests > should render EventAdmin page and match snapsho
                 placeholder="katys-30th-birthday"
                 required=""
                 type="text"
+                value=""
               />
             </div>
             <div>
@@ -168,13 +197,14 @@ exports[`EventAdmin page tests > should render EventAdmin page and match snapsho
                 Pin
               </label>
               <input
-                class="bg-grey border border-secondary text-primary sm:text-sm rounded-lg block w-full p-2.5"
+                class="bg-grey border border-secondary text-primary sm:text-sm rounded-lg block w-full p-2.5 focus:outline-primary"
                 id="password"
                 maxlength="4"
                 name="password"
                 placeholder="••••"
                 required=""
                 type="password"
+                value=""
               />
             </div>
             <div
