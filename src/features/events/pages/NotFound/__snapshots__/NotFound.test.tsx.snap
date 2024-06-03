@@ -1,0 +1,283 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NotFound page tests > should render NotFound page and match snapshot 1`] = `
+<body>
+  <div>
+    <nav
+      aria-label="main navigation"
+      class="border-b-2 border-grey glass-background glass-shadow glass-backdrop-filter sticky top-0"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-around md:justify-between mx-auto p-4"
+      >
+        <a
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+          href="https://inviami.com/"
+        >
+          <img
+            alt="Inviami Logo"
+            class="h-16"
+            src="/inviami_logo_wide_transparent.png"
+          />
+        </a>
+        <div
+          class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+        >
+          <button
+            class="text-white bg-primary hover:bg-grey hover:text-primary focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-400 ease-in-out"
+            type="button"
+          >
+            Get started
+          </button>
+          <button
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-grey rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            data-collapse-toggle="navbar-cta"
+            type="button"
+          >
+            <span
+              class="sr-only"
+            >
+              Open main menu
+            </span>
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="none"
+              viewBox="0 0 17 14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1h15M1 7h15M1 13h15"
+                stroke="#DC5463"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          data-testid="mobile-menu"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 "
+          >
+            <li>
+              <a
+                aria-current="page"
+                class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out active"
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
+                href="/shop"
+              >
+                Shop
+              </a>
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
+                href="/templates"
+              >
+                Templates
+              </a>
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
+                href="/privacy"
+              >
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a
+                class="block py-2 px-3 md:p-0 text-primary hover:text-black hover:border-b-2 transition-colors duration-400 ease-in-out"
+                href="/event-admin"
+              >
+                Event Admin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="bg-secondary"
+    >
+      <div
+        class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"
+      >
+        <div
+          class="mx-auto max-w-screen-sm text-center"
+        >
+          <h1
+            class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary"
+          >
+            404
+          </h1>
+          <p
+            class="mb-4 text-3xl tracking-tight font-bold text-primary md:text-4xl"
+          >
+            Page Not Found.
+          </p>
+          <p
+            class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400"
+          >
+            Sorry, we can't find this event. Our Internet detectives are on the case. Get in touch with us on Etsy if you need help.
+          </p>
+          <a
+            class="inline-flex text-white bg-primary hover:bg-white hover:text-primary focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center my-4"
+            href="/"
+          >
+            Back to Homepage
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-grey"
+      role="contentinfo"
+    >
+      <div
+        class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8"
+      >
+        <div
+          class="md:flex md:justify-between"
+        >
+          <div
+            class="mb-6 md:mb-0"
+          >
+            <a
+              class="flex items-center"
+              href="https://inviami.com/"
+            >
+              <img
+                alt="Inviami Logo"
+                class="h-8 me-3"
+                src="/inviami_logo_wide_transparent.png"
+              />
+            </a>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3"
+          >
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-primary uppercase"
+              >
+                Follow us
+              </h2>
+              <ul
+                class="text-black font-medium"
+              >
+                <li
+                  class="mb-4"
+                >
+                  <a
+                    class="hover:underline"
+                    href="https://instagram.com/inviami.invites"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    href="https://www.youtube.com/channel/UCycUWAt8rJjnTQ_xssS8Ogw"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    YouTube
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-primary uppercase"
+              >
+                Legal
+              </h2>
+              <ul
+                class="text-black font-medium"
+              >
+                <li
+                  class="mb-4"
+                >
+                  <a
+                    class="hover:underline"
+                    href="/privacy"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-primary uppercase"
+              >
+                Contact us
+              </h2>
+              <ul
+                class="text-black font-medium"
+              >
+                <li
+                  class="mb-4"
+                >
+                  <a
+                    class="hover:underline"
+                    href="mailto:inviami.invites@gmail.com"
+                  >
+                    inviami.invites@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-primary sm:mx-auto lg:my-8"
+        />
+        <div
+          class="sm:flex sm:items-center sm:justify-between"
+        >
+          <span
+            class="text-sm text-primary sm:text-center"
+          >
+            © 2023
+             
+            <a
+              class="hover:underline"
+              href="https://inviami.com"
+            >
+              Inviami
+            </a>
+            . Built by
+             
+            <a
+              class="hover:underline"
+              href="https://janoskocs.com"
+            >
+              János Kócs
+            </a>
+            . All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+`;

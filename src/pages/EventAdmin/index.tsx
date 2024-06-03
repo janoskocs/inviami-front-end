@@ -156,7 +156,7 @@ const EventAdmin = () => {
                     htmlFor="password"
                     className="block mb-2 text-sm font-medium text-primary "
                   >
-                    Pin
+                    PIN
                   </label>
                   <input
                     type="password"
