@@ -8,6 +8,7 @@ import { GET_EVENT_URL } from '@/api';
 
 //Add new event component to the componentMap object
 import { componentMap } from './data/eventComponentList';
+import { EventComponentType } from './types/event';
 
 const EventTemplateLoader = () => {
   const { eventLink } = useParams();
@@ -40,14 +41,16 @@ const EventTemplateLoader = () => {
 
   console.log(eventDetails);
   const TemplateComponent =
-    templateId !== null ? componentMap[templateId] : null;
+    templateId !== null
+      ? (componentMap[templateId] as EventComponentType)
+      : null;
 
   if (!TemplateComponent) {
     return <NotFound />;
   }
   return (
     <Suspense fallback={<Spinner />}>
-      <TemplateComponent />
+      <TemplateComponent event={eventDetails} />
     </Suspense>
   );
 };

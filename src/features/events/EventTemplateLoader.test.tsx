@@ -73,7 +73,7 @@ describe('EventTemplateLoader tests', () => {
         <EventTemplateLoader />
       </MemoryRouter>
     );
-    expect(screen.getByText('Loading...')).toBeInTheDocument();
+    expect(screen.getByTestId('spinner')).toBeInTheDocument();
   });
 
   it('renders NotFound component when templateId is null', async () => {

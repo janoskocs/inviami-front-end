@@ -2,9 +2,8 @@ import Spinner from '.';
 import { render, screen } from '@testing-library/react';
 
 describe('Spinner tests', () => {
-  it("should render 'Loading..", () => {
+  it('should render the spinner', () => {
     render(<Spinner />);
-    const text = screen.getByText('Loading...');
-    expect(text).toBeInTheDocument();
+    expect(screen.getByTestId('spinner')).toBeInTheDocument();
   });
 });
