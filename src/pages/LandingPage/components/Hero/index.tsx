@@ -17,7 +17,7 @@ const Hero = () => {
           </h2>
           <p className="max-w-2xl mb-6 font-light text-gray lg:mb-8 md:text-lg lg:text-xl">
             Create beautiful digital invitations and track RSVPs in real-time.
-            Share your event with friends and family.
+            <br></br>Share your event with friends and family.
           </p>
           <Link
             target="_blank"
@@ -40,10 +40,7 @@ const Hero = () => {
           </Link>
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
-            alt="mockup"
-          />
+          <img src="/hero.png" alt="hero" />
         </div>
       </div>
     </section>
