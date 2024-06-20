@@ -17,7 +17,7 @@ const Hero = () => {
           </h2>
           <p className="max-w-2xl mb-6 font-light text-gray lg:mb-8 md:text-lg lg:text-xl">
             Create beautiful digital invitations and track RSVPs in real-time.
-            <br></br>Share your event with friends and family.
+            Share your event with friends and family.
           </p>
           <Link
             target="_blank"

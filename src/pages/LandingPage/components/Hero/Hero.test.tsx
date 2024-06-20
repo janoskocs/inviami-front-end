@@ -37,14 +37,11 @@ describe('hero tests', () => {
         <Hero />
       </MemoryRouter>
     );
-    const mockupImage = screen.getByRole('img', { name: /mockup/i });
+    const mockupImage = screen.getByRole('img', { name: /hero/i });
 
     expect(mockupImage).toBeInTheDocument();
 
-    expect(mockupImage).toHaveAttribute(
-      'src',
-      'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png'
-    );
+    expect(mockupImage).toHaveAttribute('src', '/hero.png');
   });
 
   it('should render a description', () => {
