@@ -39,7 +39,7 @@ const EventTemplateLoader = () => {
     return <Spinner />;
   }
 
-  console.log(eventDetails);
+  // console.log(eventDetails);
   const TemplateComponent =
     templateId !== null
       ? (componentMap[templateId] as EventComponentType)

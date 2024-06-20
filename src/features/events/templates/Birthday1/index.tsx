@@ -5,7 +5,6 @@ interface Birthday1Props {
 }
 
 const Birthday1: React.FC<Birthday1Props> = ({ event }) => {
-  console.log(event);
   return (
     <div>
       <h1>{event.occasionTitle}</h1>
