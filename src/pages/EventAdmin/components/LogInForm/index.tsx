@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { GET_EVENT_ADMIN } from '@/api';
+import { LOGIN_EVENT_ADMIN } from '@/api';
 import axios from 'axios';
 
 interface LogInFormProps {
@@ -72,7 +72,7 @@ const LogInForm = ({ setUser }: LogInFormProps) => {
     }
 
     try {
-      const { data } = await axios.post(GET_EVENT_ADMIN, formInput);
+      const { data } = await axios.post(LOGIN_EVENT_ADMIN, formInput);
       if (!noTokenAllowed) {
         sessionStorage.setItem('token', data.token);
       }

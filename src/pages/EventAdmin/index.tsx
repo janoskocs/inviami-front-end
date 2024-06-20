@@ -11,7 +11,7 @@ const EventAdmin = () => {
     <>
       <Nav />
       {!user && <LogInForm setUser={setUser} />}
-      {user && <EventDashboard />}
+      {user && <EventDashboard user={user} />}
       <Footer />
     </>
   );
