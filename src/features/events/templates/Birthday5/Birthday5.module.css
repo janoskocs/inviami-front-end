@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'birthday-2-main-font';
+  src: url(/fonts/DancingScript-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'birthday-2-secondary-font';
+  src: url(/fonts/Norican-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'birthday-2-tertiary-font';
+  src: url(/fonts/Montserrat-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'birthday-4-primary';
+  src: url(/fonts/Satisfy-Regular.ttf) format('truetype');
+}
+
+.birthday-5-invitation {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(/assets/images/birthday-5/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.birthday-5-invitation__width {
+  width: 95%;
+  margin: 0 auto;
+  background: rgba(175, 175, 175, 0.28);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.285);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgb(255, 255, 255);
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .birthday-5-invitation__width {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .birthday-5-invitation__btn-wrapper {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .birthday-5-invitation__width {
+    width: 50rem;
+  }
+}
+
+.birthday-5-invitation__customer-name {
+  font-size: 9rem;
+  font-family: 'birthday-4-primary';
+  text-align: center;
+  margin: 0;
+  transform: skewY(-5deg);
+  color: #ffffff;
+  text-shadow:
+    0 0 4px #faeb19,
+    0 0 11px #989898;
+  letter-spacing: 8px;
+}
+
+.birthday-5-invitation__turning-paragraph {
+  font-size: 7rem;
+  font-family: 'birthday-4-primary';
+  text-align: center;
+  margin: 0;
+  margin-top: -9rem;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff;
+}
+
+.birthday-5-invitation__occasion-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.birthday-5-invitation__occasion-title {
+  font-size: 3rem;
+  font-family: 'birthday-4-primary';
+  text-align: center;
+  margin-top: 4rem;
+  letter-spacing: 3px;
+  text-shadow:
+    0 0 4px #faeb19,
+    0 0 11px #989898;
+  color: #fff;
+}
+
+.birthday-5-invitation__occasion-icon {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  width: 5rem;
+}
+
+.birthday-5-invitation__time-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.birthday-5-invitation__text {
+  font-size: 2rem;
+  font-family: 'birthday-2-tertiary-font';
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  text-shadow:
+    0 0 4px #faeb19,
+    0 0 11px #040404;
+}
+
+.birthday-5-invitation__text--at-sign {
+  font-family: 'birthday-2-main-font';
+  font-size: 5rem;
+  margin-bottom: 7rem;
+  margin-top: -5rem;
+  color: #fff;
+}
+
+.birthday-5-invitation__text--day {
+  font-size: 5rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  border-right: 1px solid #fff;
+  width: 30%;
+}
+
+.birthday-5-invitation__text--month-year {
+  margin-left: 1rem;
+  text-align: left;
+  width: 40%;
+}
+
+.birthday-5-invitation--reveal {
+  animation: reveal 2s forwards;
+}
+
+.birthday-5-invitation--download {
+  background-image: url(/assets/images/birthday-1/bg.png);
+  border: 1px solid #df7142;
+}
+
+.birthday-5-invitation__rsvp-button {
+  all: unset;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 1rem;
+  width: 40%;
+  text-align: center;
+  border: 1px solid #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.birthday-5-invitation__details-button {
+  all: unset;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 40%;
+}
+
+.birthday-5-invitation__btn-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background: rgba(175, 175, 175, 0.28);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgb(255, 255, 255);
+  padding-top: 1rem;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.download-button {
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 1rem;
+  width: 40%;
+  text-align: center;
+  border: 1px solid #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: 1px solid transparent;
+  display: block;
+  width: 50%;
+  margin: 1rem auto;
+  color: #fff;
+}

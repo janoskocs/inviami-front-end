@@ -7,6 +7,8 @@ export interface EventDetailsType {
   link: string;
   location: string;
   occasionTitle: string;
+  celebratedPerson: string;
+  schedule: string;
 }
 
 export type EventComponentType = React.ComponentType<{
